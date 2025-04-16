@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 main {
-    padding: 140px 20px;
+    padding: 120px 20px;
 }
 
 .profile-container {
@@ -187,19 +187,19 @@ button:hover {
 /* Projects Page */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 80px;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 80px; 
+    justify-items: center; 
     max-width: 1000px;
     margin: 60px auto;
+    padding: 0 20px; 
 }
 
 .project-card {
     background-color: #161b22;
     border: 2px solid #00aaff;
     border-radius: 10px;
-    padding: 25px;
+    padding: 22px;
     text-align: center;
     box-shadow: 0px 0px 15px #00aaff;
     transition: transform 0.3s ease-in-out;
@@ -243,8 +243,8 @@ button:hover {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .projects-container {
-        grid-template-columns: 1fr;
-        grid-gap: 40px;
+        grid-template-columns: 1fr; 
+        grid-gap: 40px; 
         padding: 0 20px;
     }
 
@@ -267,5 +267,24 @@ button:hover {
     .profile-pic {
         width: 160px;
         height: 160px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 80px; 
     }
 }
